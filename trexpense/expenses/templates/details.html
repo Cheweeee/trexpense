@@ -1,0 +1,14 @@
+{% extends "master.html" %}
+
+{% block title %}
+  My Expense Tracker - Details of an expense
+{% endblock %}
+{% block content %}
+<h1>{{ myexpense.name }} </h1>
+  
+<p>Amount spent: {{ myexpense.amount }}</p>
+<p>Date: {{ myexpense.date }}</p>
+
+<p>Back to <a href="/expenses">All Expenses</a></p>
+
+{% endblock %}
